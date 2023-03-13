@@ -1,6 +1,6 @@
 package Units;
 
-public class Shooter extends BaseUnit {
+public abstract class Shooter extends BaseUnit {
     protected int arrowDamage;
     protected int arrowQty;
 
@@ -8,10 +8,5 @@ public class Shooter extends BaseUnit {
         super(hp, hitDamage, speed);
         this.arrowDamage = arrowDamage;
         this.arrowQty = arrowQty;
-    }
-
-    public String getShooterInfo(){
-        return String.format("%s, ArrowDamage = %d, ArrowQty = %d", 
-            super.getInfo(), this.arrowDamage, this.arrowQty);
     }
 }

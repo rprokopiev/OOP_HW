@@ -3,7 +3,7 @@ package Units;
 /**
  * BaseUnit - the basement unit class
  */
-public class BaseUnit {
+public abstract class BaseUnit implements BaseInterface {
     protected int hp;
     protected int hitDamage;
     protected int speed;
@@ -14,8 +14,11 @@ public class BaseUnit {
         this.speed = speed;
     }
 
-    public String getInfo(){
-        return String.format("hp = %d, hitDamage = %d, speed = %d", 
-            this.hp, this.hitDamage, this.speed);
+    @Override
+    public String getInfo() {
+        return null;
     }
+
+    @Override
+    public void step() {}
 }

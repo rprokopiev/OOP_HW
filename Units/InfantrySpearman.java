@@ -6,4 +6,9 @@ public class InfantrySpearman extends Infantry {
         super(70, 20, 7);
     }
 
+    @Override
+    public String getInfo() {
+        return "Spearman";
+    }
+
 }
