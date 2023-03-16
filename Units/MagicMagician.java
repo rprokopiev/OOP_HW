@@ -2,12 +2,12 @@ package Units;
 
 public class MagicMagician extends Magic {
     public MagicMagician() {
-        super(70, 10, 7, 30, 50);
+        super(12, 7, -4, -4, 30, 30, 5, 1);
     }
 
     @Override
     public String getInfo() {
         return "Magician";
     }
-    
+
 }

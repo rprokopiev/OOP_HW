@@ -1,12 +1,10 @@
 package Units;
 
 public abstract class Magic extends BaseUnit {
-    protected int magicDamage;
     protected int magicQty;
 
-    public Magic(int hp, int hitDamage, int speed, int magicDamage, int magicQty) {
-        super(hp, hitDamage, speed);
-        this.magicDamage = magicDamage;
+    public Magic(int atack, int defence, int minDamage, int maxDamage, int hp, int hpMax, int speed, int magicQty) {
+        super(atack, defence, minDamage, maxDamage, hp, hpMax, speed);
         this.magicQty = magicQty;
     }
 }
