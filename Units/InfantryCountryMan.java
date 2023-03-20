@@ -1,8 +1,8 @@
 package Units;
 
 public class InfantryCountryMan extends Infantry {
-    public InfantryCountryMan() {
-        super(1,1,1,1,1,1,3,1);
+    public InfantryCountryMan(int x, int y) {
+        super(1, 1, 1, 1, 1, 1, 3, x, y, 1);
     }
 
     @Override

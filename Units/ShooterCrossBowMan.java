@@ -2,8 +2,8 @@ package Units;
 
 public class ShooterCrossBowMan extends Shooter {
 
-    public ShooterCrossBowMan() {
-        super(6, 3, 2, 3, 10, 10, 4, 16);
+    public ShooterCrossBowMan(int x, int y) {
+        super(6, 3, 2, 3, 10, 10, 4, x, y, 16);
     }
 
     @Override

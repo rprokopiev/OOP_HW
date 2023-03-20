@@ -2,8 +2,8 @@ package Units;
 
 public class ShooterSniper extends Shooter {
 
-    public ShooterSniper() {
-        super(12, 10, 8,10, 15, 15, 9, 32);
+    public ShooterSniper(int x, int y) {
+        super(12, 10, 8,10, 15, 15, 9, x, y, 32);
     }
 
     @Override

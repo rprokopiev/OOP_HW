@@ -2,8 +2,8 @@ package Units;
 
 public class MagicWizard extends Magic {
 
-    public MagicWizard() {
-        super(17, 12, -5, -5, 30, 30, 9, 1);
+    public MagicWizard(int x, int y) {
+        super(17, 12, -5, -5, 30, 30, 9, x, y, 1);
     }
 
     @Override

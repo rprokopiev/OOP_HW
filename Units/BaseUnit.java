@@ -13,10 +13,11 @@ public abstract class BaseUnit implements BaseInterface {
     protected int hp;
     protected int hpMax;
     protected int speed;
+    protected Position position;
 
-
-
-    public BaseUnit(int atack, int defence, int minDamage, int maxDamage, int hp, int hpMax, int speed) {
+    public BaseUnit(int atack, int defence, int minDamage, 
+                    int maxDamage, int hp, int hpMax, int speed, 
+                    int x, int y) {
         this.atack = atack;
         this.defence = defence;
         this.minDamage = minDamage;
@@ -24,6 +25,7 @@ public abstract class BaseUnit implements BaseInterface {
         this.hp = hp;
         this.hpMax = hpMax;
         this.speed = speed;
+        position = new Position(x, y);
     }
 
     public int getSpeed() {
@@ -38,6 +40,10 @@ public abstract class BaseUnit implements BaseInterface {
         return 0;
     }
 
+    public Position getPosition() {
+        return position;
+    }
+
     @Override
     public String getInfo() {
         return null;
@@ -46,6 +52,7 @@ public abstract class BaseUnit implements BaseInterface {
     @Override
     public void step(ArrayList<BaseUnit> team, ArrayList<BaseUnit> homeTeam) {
         // System.out.println("base");
-    }
+    }   
+
     
 }

@@ -12,29 +12,33 @@ import Units.ShooterSniper;
 
 public class Programm {
     public static void main(String[] args) {
+        // BaseUnit d = new InfantryCountryMan(0, 0);
+        // BaseUnit c = new InfantryCountryMan(1, 9);
+        // System.out.println(d.getPosition().getDistance(c));
+
         ArrayList <BaseUnit> team1 = new ArrayList<>();
-        team1.add(new InfantryCountryMan());
-        team1.add(new InfantryCountryMan());
-        team1.add(new InfantryRobber());
-        team1.add(new InfantryRobber()); 
-        team1.add(new InfantrySpearman());
-        team1.add(new InfantrySpearman());
-        team1.add(new MagicMagician()); 
-        team1.add(new MagicWizard());
-        team1.add(new ShooterCrossBowMan());
-        team1.add(new ShooterSniper());
+        team1.add(new ShooterSniper(0,0));
+        team1.add(new InfantryCountryMan(0,1));
+        team1.add(new InfantryRobber(0,2));
+        team1.add(new InfantryRobber(0,3)); 
+        team1.add(new InfantrySpearman(0,4));
+        team1.add(new InfantrySpearman(0,5));
+        team1.add(new MagicMagician(0,6)); 
+        team1.add(new MagicWizard(0,7));
+        team1.add(new ShooterCrossBowMan(0,8));
+        team1.add(new ShooterSniper(0,9));
         
         ArrayList <BaseUnit> team2 = new ArrayList<>();
-        team2.add(new InfantryCountryMan());
-        team2.add(new MagicWizard());
-        team2.add(new InfantryCountryMan());
-        team2.add(new InfantryRobber());
-        team2.add(new InfantryRobber());
-        team2.add(new InfantrySpearman());
-        team2.add(new InfantrySpearman());
-        team2.add(new MagicMagician());
-        team2.add(new ShooterCrossBowMan());
-        team2.add(new ShooterSniper());
+        team2.add(new InfantryCountryMan(9,0));
+        team2.add(new MagicWizard(9,1));
+        team2.add(new InfantryCountryMan(9,2));
+        team2.add(new InfantryRobber(9,3));
+        team2.add(new InfantryRobber(9,4));
+        team2.add(new InfantrySpearman(9,5));
+        team2.add(new InfantrySpearman(9,6));
+        team2.add(new MagicMagician(9,7));
+        team2.add(new ShooterCrossBowMan(9,8));
+        team2.add(new ShooterSniper(9,9));
         
         ArrayList <BaseUnit> sortedTeams = new ArrayList<>();
         sortedTeams.addAll(team1);
