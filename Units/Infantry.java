@@ -1,17 +1,13 @@
 package Units;
 
+import java.util.ArrayList;
+
 public abstract class Infantry extends BaseUnit {
-    protected int load;
 
-
-    
-    public Infantry(int atack, int defence, int minDamage, int maxDamage, 
-        int hp, int hpMax, int speed, int x, int y,int load) {
-        super(atack, defence, minDamage, maxDamage, hp, hpMax, speed, x, y);
-        this.load = load;
+    public Infantry(ArrayList<BaseUnit> name, int attack, int defence, int[] damage, int hpMax, int speed, int x, int y,
+            int supply, int gangSize, float health) {
+        super(name, attack, defence, damage, hpMax, speed, x, y, supply, gangSize, health);
     }
 
-    public int getLoad() {
-        return load;
-    }
+
 }

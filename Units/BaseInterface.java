@@ -6,4 +6,6 @@ public interface BaseInterface {
     void step(ArrayList<BaseUnit> team, ArrayList<BaseUnit> homeTeam);
 
     String getInfo();
+
+    String getName();
 }
